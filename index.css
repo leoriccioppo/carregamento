@@ -1,0 +1,115 @@
+@font-face {
+    font-family: JosefinThin;
+    src: url('./fontes/JosefinSans-Thin.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: Pecita;
+    src: url('./fontes/Pecita.otf') format('opentype');
+}
+
+*{
+    margin:0;
+    padding:0;
+    background-color: #FCFFF1;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    overflow: hidden;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    font-size: 1.6rem;
+    text-rendering: geometricPrecision;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    max-height: 80vh;
+     
+}
+
+
+#brandName{ 
+    font-family: Pecita;
+    color:  black;
+    font-size: max(42px, 10vw);
+}
+
+.dot{
+    display: flex;
+    font-size: max(82px, 20vw);  
+    padding-bottom: calc( 100% / 6);
+    
+}
+
+
+
+#dot1{
+    color: #8c55a2;
+    
+}
+
+
+#dot2{
+color: #b7ffa3;
+}
+
+#dot3{
+    color: #ffddd9;
+}
+
+.subtitle{
+    display:flex;
+    justify-content:center;
+    align-items: center;   
+}
+
+
+#subtitle{
+    color: #8c55a2;
+    font-family: JosefinThin;
+    font-size: max(16px, 2.5vw);
+}
+
+
+/*dot animation*/
+
+.blink {
+    animation: blink 3s linear infinite;
+}
+
+
+@keyframes blink{
+   0% {opacity: 0;}
+   50% {opacity: 1;}
+   100% {opacity: 1;}
+}
+
+.blink1 {
+    animation: blink1 3s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blink1{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+
